@@ -37,7 +37,7 @@ public class GetGitRepo {
                  {  
                      XSSFCell cell=(XSSFCell) iterator.next();
                      String s = cell.getStringCellValue();
-                     if(s == "") break;
+                     if(s.equals("")) break;
      				 repo.add(s);
                  }  
              }
